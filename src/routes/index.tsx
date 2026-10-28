@@ -1,25 +1,29 @@
-import { A } from "@solidjs/router";
-import Counter from "~/components/Counter";
+import { Title } from '@solidjs/meta';
+import Counter from '../components/Counter';
+import logo from '../logo.svg';
 
 export default function Home() {
   return (
-    <main class="text-center mx-auto text-gray-700 p-4">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">Hello world!</h1>
+    <main class="px-4 py-12">
+      <Title>Home - Solid App</Title>
+      <img
+        src={logo}
+        class="pointer-events-none mx-auto h-[24vmin] animate-[spin_20s_linear_infinite]"
+        alt="Solid logo"
+      />
+      <h1 class="my-4 text-4xl font-bold">Hello Solid!</h1>
       <Counter />
-      <p class="mt-8">
-        Visit{" "}
-        <a href="https://solidjs.com" target="_blank" class="text-sky-600 hover:underline">
-          solidjs.com
-        </a>{" "}
-        to learn how to build Solid apps.
-      </p>
       <p class="my-4">
-        <span>Home</span>
-        {" - "}
-        <A href="/about" class="text-sky-600 hover:underline">
-          About Page
-        </A>{" "}
+        Edit <code>src/routes/index.tsx</code> and save to reload.
       </p>
+      <a
+        class="font-semibold text-sky-700 underline decoration-sky-400 decoration-2 underline-offset-4 transition-colors hover:text-sky-900 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-600"
+        href="https://v2.solidjs.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn Solid
+      </a>
     </main>
   );
 }
