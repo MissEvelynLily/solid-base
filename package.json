@@ -15,10 +15,10 @@
     "@solidjs/vite-plugin": "^3.0.0-next.52",
     "@tailwindcss/vite": "^4.1.13",
     "filesystem-routing": "0.4.0",
+    "nitro": "^3.0.260903-beta",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
-    "vite": "^8.1.5",
-    "nitro": "^3.0.260903-beta"
+    "vite": "^8.1.5"
   },
   "dependencies": {
     "@solidjs/meta": "^1.0.0-next.2",
